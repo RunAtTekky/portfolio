@@ -51,7 +51,7 @@
             }
           }
         }
-        > aside {
+        aside {
           display: flex;
           justify-content: space-between;
           width: 70%;
@@ -71,16 +71,19 @@
             border-radius: 50px;
             position: absolute;
             top: 20%;
-            left: 20%;
+            left: 0%;
             z-index: -1;
           }
 
           > p {
-            font: 900 2rem $text2;
+            font: 900 2rem $text1;
           }
           > span {
             font: 500 1rem $text2;
           }
+        }
+        article[data-special] {
+          width: 16rem;
         }
       }
     }
@@ -104,9 +107,10 @@
       }
 
       > img {
-        width: 40vmax;
-        height: 40vmax;
+        width: 30vmax;
+        height: 30vmax;
         object-fit: contain;
+        border-radius: 50%;
       }
     }
   }
